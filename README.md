@@ -33,3 +33,32 @@ GitHub Pages は、住所の最後が `/` のとき `index.html` を探します
 
 `main` に入れると、GitHub Pages がそのまま出します（Settings → Pages が
 `main` / `(root)` を見ています）。出るまでに、少し待つことがあります。
+
+## 検索に載せていません
+
+`index.html` と `kit-agent-motion.html` の頭に
+`<meta name="robots" content="noindex, nofollow">` を入れてあります。
+住所を知っている人は開けますが、検索からは辿り着きません。
+
+載せたくなったら、その一行を消してください。
+（`robots.txt` はこの置き場では効きません。読まれるのは
+`hina17ta17.github.io/robots.txt` だけで、レポジトリの中に置いても見てもらえません）
+
+## 中の絵と頁について
+
+この頁と、`kit-agent-model.jpeg` は作者のものです。
+公開の場所に置いてある以上、開いた人は保存できます。
+転載や二次利用はご遠慮ください。
+
+## 置いてある人へ
+
+コミットに入る作者のアドレスは、公開レポジトリでは誰にでも見えます。
+大学のアドレスは学籍番号を含むので、GitHub の noreply
+（`…@users.noreply.github.com`）を使ってください。
+
+    git config --global user.email "…@users.noreply.github.com"
+
+あわせて GitHub の Settings → Emails で
+「Keep my email addresses private」と
+「Block command line pushes that expose my email」を入れておくと、
+うっかり出すことがなくなります。
